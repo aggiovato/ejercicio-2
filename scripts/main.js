@@ -1,9 +1,3 @@
-/***
- *
- *
- *
- */
-
 loadSection("header", "components/header.html");
 loadSection("introduction", "components/introduction.html");
 loadSection("tools", "components/tools.html");
