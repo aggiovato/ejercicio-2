@@ -5,7 +5,7 @@
 El principal objetivo de este ejercicio es practicar el **CSS** para la creación de estilos visualmente atractivos y funcionales.
 
 Puedes acceder a la aplicación en el siguiente enlace:
-[]()
+[css-styling-web](https://css-styling-web.netlify.app/)
 
 ## Tabla de Contenidos
 
