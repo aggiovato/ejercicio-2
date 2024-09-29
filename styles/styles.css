@@ -49,6 +49,13 @@ ul {
   padding-left: 50px;
 }
 
+@media (max-width: 767px) {
+  .content-sumary {
+    margin-inline: 13%;
+    padding-left: 17%;
+  }
+}
+
 .content-sumary li {
   margin-bottom: 5px;
   font-weight: 600;
@@ -245,7 +252,6 @@ pre {
 code {
   font-family: "Courier New", Courier, monospace;
   color: #e9efec;
-  width: 50%;
 }
 
 .modal-content {
@@ -255,8 +261,8 @@ code {
 .show-modal {
   display: block;
   position: fixed;
+  height: 75%;
   width: 50%;
-  height: 78%;
   top: 50%;
   left: 50%;
   padding: 25px;
@@ -267,6 +273,13 @@ code {
   color: #e9efec;
   background-color: rgb(22, 66, 60, 0.35);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+  .show-modal {
+    width: 90%;
+    height: 85%;
+  }
 }
 
 .fa-circle-xmark {
