@@ -1,3 +1,5 @@
+![Logo de la aplicación](./assets/logo_ej_2.svg)
+
 # Ejercicio 2: Estilos CSS - Sitio web sobre programación
 
 El principal objetivo de este ejercicio es practicar el **CSS** para la creación de estilos visualmente atractivos y funcionales.
