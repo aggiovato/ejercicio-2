@@ -8,15 +8,16 @@
   margin-right: auto;
   align-content: center;
   background-color: #e9efec;
-  color: #16423c;
+  color: #093b34;
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
 }
 
 h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  color: #16423c;
+  margin-top: 50px;
 }
 
 h2 {
@@ -24,8 +25,7 @@ h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
-  font-weight: bold;
-  color: #6a9c89;
+  margin-inline: 30px;
 }
 
 li {
@@ -41,10 +41,16 @@ ul {
 
 /* ESTILOS CONTENT */
 
+.content-sumary {
+  font-family: "Titillium Web", sans-serif;
+  font-size: small;
+  color: #6a9c89;
+  margin-inline: 34%;
+}
+
 .content-sumary li {
   margin-bottom: 5px;
-  font-style: italic;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .content-sumary li::before {
@@ -63,11 +69,12 @@ ul {
   gap: 17px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* RESPONSIVENESS */
   .introduction {
     grid-template-columns: 1fr;
     margin-inline: 20px;
+    gap: 0px;
   }
 }
 
@@ -233,23 +240,23 @@ code {
 
 .modal-content {
   display: none;
-  position: fixed;
-  width: 50%;
-  height: 65%;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  border-radius: 15px;
-  z-index: 1000;
-  overflow: auto;
-  background-color: rgb(22, 66, 60, 0.7);
 
   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
 }
 
 .show-modal {
   display: block;
+  position: fixed;
+  width: 50%;
+  height: 78%;
+  top: 50%;
+  left: 50%;
+  padding: 25px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  z-index: 1000;
+  overflow: auto;
+  background-color: rgb(22, 66, 60, 0.7);
 }
 
 .fa-circle-xmark {
@@ -271,12 +278,18 @@ code {
   font-size: 40px;
 }
 
+.html-text {
+  color: #c4dad2;
+  font-size: 30px;
+}
+
 .pre-html {
   padding: 3px;
   border: 2px solid #ccc;
   font-size: small;
   background-color: rgb(22, 66, 60, 0.88);
   border-radius: 15px;
+  overflow-x: auto;
 }
 
 footer {
