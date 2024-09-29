@@ -9,7 +9,7 @@ loadSection("introduction", "components/introduction.html");
 loadSection("tools", "components/tools.html");
 loadSection("buttons", "components/buttons.html");
 loadSection("css", "components/css.html");
-loadSection("modal", "components/modal.html");
+loadSection("html", "components/html.html");
 loadSection("footer", "components/footer.html");
 
 function loadSection(section_id, file_path) {
@@ -50,21 +50,27 @@ function copyToClipboard(element) {
 }
 
 function showHTML() {
-  let modal = document.getElementById("modal-content");
+  let modal_html = document.getElementById("html-content");
+  modal_html.classList.add("show-modal");
 
-  modal.classList.add("show-modal");
-
-  document.querySelector(".close").onclick = function () {
-    modal.classList.remove("show-modal");
+  const handleCloseClick = () => {
+    modal_html.classList.remove("show-modal");
   };
+
+  document
+    .getElementById("html-close")
+    .addEventListener("click", handleCloseClick);
 }
 
 function showCSS() {
-  let modal = document.getElementById("css-content");
+  const modal_css = document.getElementById("css-content");
+  modal_css.classList.add("show-modal");
 
-  modal.classList.add("show-modal");
-
-  document.querySelector(".close").onclick = function () {
-    modal.classList.remove("show-modal");
+  const handleCloseClick = () => {
+    modal_css.classList.remove("show-modal");
   };
+
+  document
+    .getElementById("css-close")
+    .addEventListener("click", handleCloseClick);
 }
